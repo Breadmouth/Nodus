@@ -19,7 +19,6 @@ public class SpawnerScript : MonoBehaviour {
         nodeGrid = new List<GameObject>();
         connectors = new List<GameObject>();
 
-        //create grid seen on screen
         nodeGrid.Add((GameObject)Instantiate(node, new Vector3(0, -3, 0), transform.rotation));
         nodeGrid.Add((GameObject)Instantiate(node, new Vector3(-1, -1, 0), transform.rotation));
         nodeGrid.Add((GameObject)Instantiate(node, new Vector3(1, -1, 0), transform.rotation));
@@ -97,7 +96,6 @@ public class SpawnerScript : MonoBehaviour {
         else
             nextSpawnCount = 2;
 
-        //delete any node and connector too far down
         for (int i = nodeCount - 1; i >= 0; --i)
         {
             if (nodeGrid[i] != null)
@@ -119,6 +117,5 @@ public class SpawnerScript : MonoBehaviour {
                 }
             }
         }
-
     }
 }
