@@ -48,6 +48,7 @@
      <Compile Include="Assets\CameraScript.cs" />
      <Compile Include="Assets\ConnectorScript.cs" />
      <Compile Include="Assets\ControlScript.cs" />
+     <Compile Include="Assets\DiamondScript.cs" />
      <Compile Include="Assets\Node.cs" />
      <Compile Include="Assets\SpawnerScript.cs" />
  <Reference Include="UnityEngine.UI">
